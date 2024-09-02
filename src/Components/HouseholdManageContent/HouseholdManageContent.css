@@ -1,0 +1,538 @@
+*{
+    color: #000;
+}
+main 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.bg-img
+{
+    width: 100%;
+    height: 40%;
+    background-image: url('../../../public/img/account/background.jpg');
+    background-position: 0 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.profile
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-info
+{
+    color: #000;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    background-color: #FAFAFA;
+    border: solid 1px #969696;
+    width: 25%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-img
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+#name
+{
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    font-weight: 700;
+}
+
+#role, #id
+{
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    font-weight: 100;
+}
+
+.content-info a
+{
+    margin-top: 30px;
+}
+
+.content-2
+{
+    display: block;
+    color: #000;
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    
+    background-color: #FAFAFA;
+    border: solid 1px #969696;
+    width: 65%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chose
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+h4{
+    margin-top: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.setings
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+
+}
+
+.setings-form
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    width: 90%;
+    margin: 40px 0 10px 0;
+}
+
+.element
+{
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 0 auto;
+
+}
+
+.element>input
+{
+    width: 450px;
+    height: 50px;
+    border: solid 1px #969696;
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+}
+
+::placeholder
+{
+    color: #969696;
+}
+
+.element>label
+{
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.content-2 button
+{
+    width: 150px;
+    height: 50px;
+    font-size: 12px;
+    align-items:flex-end;
+
+}
+
+
+.setings .warning
+{
+    margin-top: 30px;
+}
+
+.setings-form .update-button-container {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.security
+{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.security-form
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    width: 90%;
+}
+
+.household
+{
+    /* display: none; */
+    width: 95%;
+    height: 80%;
+    color: #000;
+    position: absolute;
+    background-color: #FAFAFA;
+
+}
+
+.household-item
+{
+    width: 80%;
+    height: 200px;
+    background-image: url('../../../public/img/account/2o.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* opacity: 0.6; */
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.household-item>h2
+{
+    font-weight: 800;
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 1800px)
+{
+    .element>input
+    {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 1500px)
+{
+
+    .content-2
+    {
+        width: 60%;
+    }
+
+    .setings-form
+    {
+        left: 0px;
+    }
+
+    .element>input
+    {
+        width: 100%;
+    }
+
+    ::placeholder
+    {
+        font-size: 14px;
+    }
+
+    .setings-form>button
+    {
+        width: 100%;
+    }
+
+    .setings-form .update-button-container {
+        width: 100%;
+    }
+
+    .update-button {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 950px)
+{
+    .profile
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-info
+    {
+        left: unset;
+        width: 70%;
+        height: 280px;
+    }
+
+    .account-img
+    {
+        width: 70px;
+        height: 70px;
+    }
+
+    .content-2
+    {
+        margin-top: 270px;
+        left: unset;
+        width: 70%;
+        height: 650px;
+    }
+}
+
+@media only screen and (max-width: 850px)
+{
+    .setings p
+    {
+        text-align: center;
+        width: 80%;
+    };
+}
+
+@media only screen and (max-width: 580px)
+{
+    .chose>h4
+    {
+        font-size: 12px;
+    }
+
+    .setings-form, .security-form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .security-form
+    {
+        margin-bottom: 20px;
+    }
+
+    .element>label
+    {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .element>input
+    {
+        margin: 0;
+        height: 35px;
+    }
+
+    .setings-form .update-button-container {
+        width: 60%;
+    }
+
+    .setings>p
+    {
+        font-size: 14px;
+    }
+}
+.user-img {
+    width: 60px; /* Dimensiunea dorită pentru imagine */
+    height: 60px; /* Dimensiunea dorită pentru imagine */
+    border-radius: 50%; /* Pentru a face imaginea rotundă */
+    object-fit: cover; /* Asigură că imaginea se potrivește în container */
+    margin-right: 10px; /* Spațiu între imagine și text */
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Spațiu între utilizatori */
+}
+
+.user-name, .user-role {
+    margin: 0 10px;
+}
+
+.user-actions {
+    margin-left: auto; /* Mută butoanele la marginea din dreapta */
+    display: flex;
+    gap: 10px; /* Spațiu între butoane */
+}
+
+.user-list {
+    max-height: 1600px; /* Setează înălțimea maximă a containerului */
+    overflow-y: auto; /* Adaugă o bară de derulare pe axa y dacă conținutul depășește înălțimea */
+    margin-bottom: 80px; /* Adaugă o margine în partea de jos a containerului */
+    width: 100%; /* Setează lățimea containerului la 100% */
+    max-width: 1000px; /* Setează lățimea maximă a containerului */
+    background-color: #FAFAFA;
+    border: solid 1px #969696;
+}
+
+h2 {
+    font-family: "Andale Mono", monospace;
+    font-size: 20px;
+}
+
+.manage-button, .delete-button {
+    width: 40px; /* Setează lățimea butoanelor */
+}
+
+.user-actions button {
+    width: 120px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: #1BBC9B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adaugă dimensiunea inițială a fontului */
+}
+
+.user-info {
+    display: flex; /* Setează containerul ca Flexbox */
+    align-items: center; /* Centrează elementele pe verticală */
+    flex-wrap: nowrap; /* Nu permite elementelor să se înfășoare pe linii noi */
+}
+
+.user-img, .user-name, .user-role {
+    margin: 10px; /* Adaugă o marjă în jurul imaginii, numelui și rolului */
+}
+
+@media (max-width: 800px) {
+    .user-actions button {
+        width: 100px;
+        height: 30px;
+        font-size: 12px; /* Micșorează dimensiunea fontului */
+    }
+}
+
+@media (max-width: 700px) {
+    .user-info {
+        flex-direction: column; /* Aranjează elementele pe verticală */
+    }
+    .user-actions {
+        flex-direction: column; /* Aranjează butoanele pe verticală */
+        align-items: center; /* Centrează butoanele pe orizontală */
+    }
+}
+
+@media (max-width: 525px) {
+    .user-item {
+        flex-direction: column;
+        align-items: center; /* Centrează elementele pe orizontală */
+    }
+    
+    .user-info {
+        flex-direction: column;
+        align-items: center; /* Centrează elementele pe orizontală */
+    }
+
+    .user-img {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .user-name, .user-role {
+        margin: 5px 0;
+        text-align: center; /* Centrează textul */
+    }
+
+    .user-actions {
+        width: 100%; /* Asigură că butoanele ocupă toată lățimea */
+        display: flex; /* Folosește Flexbox */
+        justify-content: center; /* Centrează butoanele */
+        gap: 10px; /* Spațiu între butoane */
+        margin-top: 10px;
+        margin-left: 0; /* Elimină margin-left adăugat anterior */
+    }
+}
+.user-item{
+ 
+    border-top: 1px solid black;
+}
+.top-buttons{
+    background-color: white;
+    border: 1px solid black; /* Adaugă un chenar negru */
+    padding: 10px; /* Adaugă un spațiu în interiorul chenarului */
+    margin: 10px;
+    
+}
+sent-inv-button{
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #1BBC9B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adaugă dimensiunea inițială a fontului */
+}
+/* HouseholdContent.css */
+/* HouseholdContent.css */
+button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Ajustează padding-ul pentru dimensiuni mai mici */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px; /* Ajustează font-size-ul pentru dimensiuni mai mici */
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.add-member-btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Dimensiuni mai mici */
+    cursor: pointer;
+    font-size: 12px; /* Font mai mic */
+    width: 10px; /* Ajustează lățimea */
+    height: 10px; /* Ajustează înălțimea */
+}
+
+.add-member-btn:hover {
+    background-color: #45a049;
+}
+
+.small-button {
+    padding: 5px 10px; /* Dimensiuni și mai mici */
+    font-size: 10px; /* Font și mai mic */
+    width: 10px;
+    height: auto;
+}

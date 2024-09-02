@@ -1,0 +1,44 @@
+.checkbox
+{
+    background-color: #F3FAFA;
+    width: 330px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.checkbox label
+{
+    margin-right: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    width: 170px;
+}
+
+.checkbox input
+{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 500px) {
+    .checkbox {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+    .checkbox label
+    {
+    margin-right: 20px;
+}
+}
+@media (max-width: 370px) {
+    .checkbox {
+        width: 100%; 
+        margin: 20px auto; 
+    }
+    .checkbox label
+    {
+    margin-right: 0px;
+}
+}

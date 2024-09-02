@@ -1,0 +1,163 @@
+.introduct-image {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    height: 1000px;
+    background-image: url('../../../public/img/home/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: block;
+    overflow: hidden;
+    height: auto;
+}
+
+.introductive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 400px;
+}
+
+.introductive .home-text {
+    position: relative;
+    right: 270px;
+    bottom: 120px;
+    margin-top: 400px;
+    width: 100%;
+}
+
+.home-text h2 {
+    font-size: 80px;
+    font-weight: 900;
+    color: #403E3E;
+    position: relative;
+    top: -50px;
+    display: block;
+    height: 100px;
+    margin: 0; 
+}
+
+.slogan {
+    padding: 20px 50px;
+    position: relative;
+    right: 200px;
+    bottom: 170px;
+    z-index: 1;
+}
+
+.slogan p {
+    color: #403E3E;
+    font-weight: 700;
+}
+
+.about-us {
+    width: 100%;
+    height: 800px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    text-align: center;
+}
+
+.about-us>img {
+    width: 30%;
+}
+
+.about-us .about {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about>h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #403E3E;
+    margin-bottom: 30px;
+}
+
+.about>p {
+    color: #403E3E;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.team {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.team>p {
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1BBC9B;
+}
+/* 
+input[type="text"] {
+    all: initial;
+}
+
+input[type="text"],
+input[type="email"],
+*/
+
+@media only screen and (max-width: 1000px) {
+    .about-us>img {
+        display: none;
+    }
+    .about-us .about {
+        width: 80%;
+        margin-left: 0px;
+        margin: 20px;
+    }
+    
+    .team{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team>p{
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 1400px) {
+    .home-text h2 {
+        text-align: center;
+    }
+
+    .slogan p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .slogan{
+        right:0;
+        left:0;
+        text-align: center;
+        position: relative;
+    }
+    .introductive .home-text{
+        right:0;
+        left:0;
+        text-align: center;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .home-text h2 {
+        font-size: 10vw;
+    }
+}

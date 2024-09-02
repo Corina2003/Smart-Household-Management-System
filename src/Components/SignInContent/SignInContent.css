@@ -1,0 +1,149 @@
+
+.sign-in-main 
+{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.sign-in-bg-image
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url('../../../public/img/login/sign-in-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sign-in-main .component-1
+{
+    position: absolute;
+    background-color: #1BBC9B;
+    width: 620px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.component-1 hr
+{
+    margin-bottom: 50px;
+}
+
+.sign-in-form input[type="text"], .sign-in-form input[type="email"], .sign-in-form input[type="password"], .sign-up-form input[type="text"], .sign-up-form input[type="email"],.sign-up-form input[type="password"]
+{
+    width: 280px;
+    height: 60px;
+    border: none;
+    margin: 0 0 30px 0;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    border-radius: 0px;
+}
+
+.sign-in-form ::placeholder, .sign-up-form ::placeholder
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+.acc-create
+{
+    font-size: 26px;
+}
+
+main a
+{
+    color: #fff;
+}
+
+@media only screen and ((max-width: 700px) or (max-height: 850px))
+
+{
+    .sign-in-main .component-1
+    {
+        width: 500px;
+        height: 600px;
+    }
+    .component-1>img
+    {
+        display: none;
+    }
+}
+
+@media only screen and ((max-width: 550px) or (max-height: 700px))
+
+{
+    .sign-in-main .component-1
+    {
+        width: 400px;
+        height: 500px;
+    }
+
+    .sign-in-main .acc-create
+    {
+        font-size: 18px;
+    }
+}
+
+@media only screen and ((max-width: 450px) )
+
+{
+    .sign-in-main .component-1
+    {
+        width: 330px;
+        height: 430px;
+    }
+
+    /* .sign-in-main .acc-create
+    {
+        margin: 0px 0px 10px 0px;
+        padding: 10px;
+        font-size: 12px;
+    } */
+}
+
+@media only screen and (max-height: 650px)
+{
+   
+    .sign-in-main .component-1
+    {
+        width: 330px;
+        height: 430px;
+    }
+    .sign-in-main .acc-create
+    {
+        margin: 0px 0px 10px 0px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+} 
+@media only screen and (max-height: 530px)
+{
+    .component-1 {
+        padding-top: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sign-in-main {
+        width: 100%;
+        position: relative; 
+    }
+    .component-1 {
+        height: auto;
+        max-height: 90%; 
+        overflow-y: auto; 
+    }
+
+   
+}
